@@ -6,6 +6,6 @@ if [ $# -eq 0 ]
 fi
 token=$( cat aocsession.user )
 email=$( cat email.user )
-curl --user-agent "github.com/FHoekstra74/aoc2023 by $email" --cookie "session=$token" https://adventofcode.com/2023/day/$1/input -o day$1.txt
+curl --user-agent "github.com/FHoekstra74/aoc2023 by $email" --cookie "session=$token" https://adventofcode.com/2023/day/"$1"/input -o day"$1".txt
 echo 
-cat day$1.txt
+cat day"$1".txt
